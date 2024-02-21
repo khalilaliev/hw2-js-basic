@@ -15,9 +15,9 @@ console.log("Task 1 pow result:", pow);
 /// Level 2 ///
 
 let num = 10;
-num = num + 5;
-num = num - 2;
-num = num * 2;
+num += 5;
+num -= 2;
+num *= 2;
 num++;
 num++;
 num++;
@@ -39,25 +39,25 @@ console.log(
 /// Level 4 ///
 
 const userAge = Number(prompt("Enter your age:"));
+console.log(userAge >= 18);
 
-if (userAge >= 18) {
-  1;
-  console.log("Task 4 result:", true);
-} else if (userAge <= 18) {
-  console.log("Task 4 result:", false);
-} else {
-  console.log("You have done smth wrong!");
-}
+// if (userAge >= 18) {
+//   console.log("Task 4 result:", true);
+// } else if (userAge <= 18) {
+//   console.log("Task 4 result:", false);
+// } else {
+//   console.log("You have done smth wrong!");
+// }
 
 /// Level 5 ///
 
 let x = Number(prompt("Enter value of X"));
 let y = Number(prompt("Enter value of Y"));
-let valueOfFirstVariable = x;
 
 if (!isNaN(x) && !isNaN(y)) {
-  x = y;
-  y = valueOfFirstVariable;
+  x = x + y;
+  y = x - y;
+  x = x - y;
   console.log("Task 5 result of X variable:", x);
   console.log("Task 5 result of Y variable:", y);
 } else {
